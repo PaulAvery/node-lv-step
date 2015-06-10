@@ -1,6 +1,6 @@
 {
   "name": "lv-step",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "lib/lv-step.js",
   "author": "Florian Albertz",
   "license": "BSD-3-Clause",
