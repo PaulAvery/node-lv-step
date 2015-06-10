@@ -1,12 +1,11 @@
-lv-step
-========
+# lv-step
 [![Build Status](https://travis-ci.org/PaulAvery/node-lv-step.svg)](https://travis-ci.org/PaulAvery/node-lv-step)
 
 
 This module provides methods to calculate the needed steps to transition from one list of things to another.
 
 ## Quickstart
-Example:
+**Example:**
 
 ```js
 var lvstep = require('lv-step');
@@ -17,7 +16,7 @@ var matrix = lvstep.matrix(from, to, eq);
 var steps = lvstep.steps(matrix, to);
 ```
 
-*steps:*
+**Steps:**
 
 ```js
 [
@@ -31,7 +30,7 @@ var steps = lvstep.steps(matrix, to);
 ```
 
 ## API
-### .matrix(<source>, <destination>, <equality_cb>)
+### .matrix(source, destination, equalityCheck)
 This function calculates a full levenshtein matrix as a two dimensional array. The `source` and `destination` attributes should both be Arrays.
 An equality function must be passed as the third parameter, which should return `true` or `false` for any two objects.
 
@@ -43,7 +42,7 @@ var matrix = lvstep.matrix(
 );
 ```
 
-*matrix*:
+**Matrix**:
 
 ```js
 [[0, 1, 2, 3, 4],
@@ -55,7 +54,7 @@ var matrix = lvstep.matrix(
  [6, 6, 5, 4, 4]]
 ```
 
-### .distance(<matrix>)
+### .distance(matrix)
 A small utility function to get the levenshtein distance for a given matrix.
 
 ```js
@@ -63,14 +62,14 @@ A small utility function to get the levenshtein distance for a given matrix.
 lvstep.distance(matrix);
 ```
 
-### .steps(<matrix>, <destination>)
+### .steps(matrix, destination)
 Given a levenshtein matrix and a destination array, this function returns a list of steps which by themselves be used to transition from the source to the destination array.
 
 ```js
 var steps = lvstep.steps(matrix, ['f', 'r', 'e', 'd', 'd', 'y']);
 ```
 
-*steps:*
+**steps:**
 
 ```js
 [

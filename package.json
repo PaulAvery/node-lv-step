@@ -4,6 +4,7 @@
   "main": "lib/lv-step.js",
   "author": "Florian Albertz",
   "license": "BSD-3-Clause",
+  "description": "Calculate transition from one list to another",
   "repository": {
     "type": "git",
     "url": "https://github.com/PaulAvery/node-lv-step.git"
