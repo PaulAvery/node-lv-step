@@ -1,0 +1,36 @@
+{
+  "name": "lv-step",
+  "version": "0.0.0",
+  "main": "lib/lv-step.js",
+  "author": "Florian Albertz",
+  "license": "BSD-3-Clause",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PaulAvery/node-lv-step.git"
+  },
+  "scripts": {
+    "test": "make test",
+    "prepublish": "make test"
+  },
+  "devDependencies": {
+    "eslint": "^0.22.1",
+    "mocha": "^2.2.5",
+    "must": "^0.12.0",
+    "version-bump": "^0.1.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "node": true
+    },
+    "rules": {
+      "curly": [
+        2,
+        "multi-line"
+      ],
+      "quotes": [
+        2,
+        "single"
+      ]
+    }
+  }
+}
